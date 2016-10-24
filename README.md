@@ -2,7 +2,7 @@
 
 The central information hub for the students of IGDTUW. Designed by the students, for the students. 
 
-The prototype of the web application is currently live on [heroku](http://www.igdtuwonline.herokuapp.com).
+The prototype of the web application is currently live on [heroku](http://igdtuwonline.herokuapp.com).
 
 ## Setup Instructions
 
