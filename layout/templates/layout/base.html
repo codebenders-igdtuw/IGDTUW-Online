@@ -1,0 +1,114 @@
+{% load staticfiles %}
+
+<!DOCTYPE HTML>
+<HTML lang ="en-us">
+
+<head>
+	<!-- Basic Page needs -->
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+		<meta charset="utf-8"> 
+		<title>IGDTUW Online</title>
+		<meta name="description" content="The one stop destination for all information for the students of IGDTUW">
+		<meta name="keywords" content="HTML, CSS, JavaScricpt">
+		<meta name='revised' content='October 2016'>
+		<meta name="author" content="Diksha">
+	
+	<!-- Mobile Specific Metas-->
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta content="telephone=no" name="format-detection">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" type="text/css" href="{% static 'layout/css/bootstrap.css' %}" />  
+  
+	<!-- jQuery library-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript-->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Nobile" rel="stylesheet"> 
+
+</head>
+
+<body>
+
+	<!-- Navigation-->
+	<nav class="navbar navbar-default navbar-static-top">
+        <div class="container">
+        	<div class="navbar-header page-scroll">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
+             </div> 
+             <div class="collapse navbar-collapse" id="myNavbar">
+               <ul class="nav navbar-nav">
+                   <li><a href="#">Home</a></li>
+                   <li><a href="#">About Us</a></li>
+                   <li class="dropdown">
+			        	<a class="dropdown-toggle" data-toggle="dropdown" href="#">Academic Resources
+				        <span class="caret"></span></a>
+				        <ul class="dropdown-menu">
+				        	<li><a href="#">Academic Calendar</a></li>
+				        	<li><a href="#">Syllabus</a></li>
+					        <li><a href="#">Previous Year Question Papers</a></li>
+				        </ul>
+			      </li>
+			      <li class="dropdown">
+			        	<a class="dropdown-toggle" data-toggle="dropdown" href="#">Societies Promoted
+				        <span class="caret"></span></a>
+				        <ul class="dropdown-menu">
+				        	<li><a href="#">ACM Student Chapter</a></li>
+				        	<li><a href="#">CodeBenders</a></li>
+				        	<li><a href="#">CSI Student Chapter</a></li>
+				        	<li><a href="">Enactus</a></li>
+				        	<li><a href="#">Entrepreneurship Cell</a></li>
+				        	<li><a href="#">Greensphere</a></li>
+				        	<li><a href="#">IEEE Student Chapter</a></li>
+				        	<li><a href="#">Innerve- Technical Festival</a></li>
+				        	<li><a href="#">Lean In- IGDTUW</a></li>
+				        	<li><a href="#">Prekshya</li></a>
+				        	<li><a href="#">Rotaract Club @IGDTUW</a></li>
+				        	<li><a href="#">SpicMacay</a></li>
+				 			<li><a href="#">Taarangana- Cultural Festival</a></li>
+				 			<li><a href="#">Technoliterati</a></li>
+				        </ul>
+			      </li>
+			      <li class="dropdown">
+			        	<a class="dropdown-toggle" data-toggle="dropdown" href="#">Placement
+				        <span class="caret"></span></a>
+				        <ul class="dropdown-menu">
+				        	<li><a href="#">Placement Statistics</a></li>
+				        	<li><a href="#">Interview Experience</a></li>
+				        </ul>
+			      </li>
+			      <li class="dropdown">
+			        	<a class="dropdown-toggle" data-toggle="dropdown" href="#">Student's Corner
+				        <span class="caret"></span></a>
+				        <ul class="dropdown-menu">
+				        	<li><a href="#">Student's Achievements</a></li>
+				        	<li><a href="#">Alumni Speaks</a></li>
+				        </ul>
+			      </li>
+			      <li><a href="#">Meet the Team</a></li>
+			      <li><a href="#">Our Blog</a></li>
+                  <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+	</nav>
+	<!-- End Navigation -->
+
+	{% block content %} {% endblock %}
+
+	<!-- Footer 
+	<footer class="text-center">
+		<p>&copy; 2016 All rights reserved.</p>
+	</footer>
+	<!-- End Footer -->
+	
+</body>
+
+</html>
